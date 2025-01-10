@@ -19,11 +19,11 @@ async function updateRedirects () {
 </script>
 
 <template>
-  <div>
-    <h3>Server redirects</h3>
-    <form @submit.prevent="updateRedirects">
-      <p><textarea v-model="redirects.text" rows="6" placeholder="/from /to (one redirect per line)" style="width: 300px;" /></p>
-      <button type="submit">
+  <div class="p-4 bg-white rounded-lg shadow-md">
+    <h3 class="text-lg font-semibold mb-4">Server redirects</h3>
+    <form @submit.prevent="updateRedirects" class="mb-4">
+      <p><textarea v-model="redirects.text" rows="6" placeholder="/from /to (one redirect per line)" class="block w-full p-2 mb-2 border rounded-md" /></p>
+      <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
         Save redirects
       </button>
     </form>

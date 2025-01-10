@@ -5,6 +5,6 @@ useSeoMeta({
 })
 </script>
 
-<template>
+<template class="min-h-screen bg-gray-100">
   <NuxtPage />
 </template>
